@@ -1,0 +1,41 @@
+{
+  "name": "toddler-game-worksheet",
+  "version": "1.0.0",
+  "description": "Interactive learning application for toddlers with games and worksheets",
+  "type": "module",
+  "main": "src/main.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext ts,tsx --fix"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "react-redux": "^8.1.1",
+    "firebase": "^9.23.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react": "^7.32.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.4",
+    "tailwindcss": "^3.3.2",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14"
+  }
+}

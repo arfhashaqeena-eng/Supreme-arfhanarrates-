@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #FF6B9D;
+  --secondary-color: #4ECDC4;
+  --tertiary-color: #FFE66D;
+  --accent-color: #95E1D3;
+  --text-color: #2D3436;
+  --bg-color: #F7F7F7;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-header p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.game-button {
+  padding: 3rem 2rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  font-weight: bold;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.game-button:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.game-button:active {
+  transform: scale(0.98);
+}
+
+.color-matching {
+  background: linear-gradient(135deg, var(--primary-color), #FF1493);
+}
+
+.shape-recognition {
+  background: linear-gradient(135deg, var(--secondary-color), #00CED1);
+}
+
+.number-counting {
+  background: linear-gradient(135deg, var(--tertiary-color), #FFD700);
+  color: #333;
+}
+
+.animal-sounds {
+  background: linear-gradient(135deg, var(--accent-color), #7FEFBA);
+  color: #333;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .button-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .game-button {
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+    min-height: 140px;
+  }
+}
